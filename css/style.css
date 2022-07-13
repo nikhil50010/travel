@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500;1,700&family=Dancing+Script:wght@600&family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.brand {
+  color: #e8604c;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+}
+
+.cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
+.top_section {
+  background: #313041;
+  font-size: 15px;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.guide {
+  background: #e8604c;
+  color: white;
+  border: none;
+  padding: 16px 10px;
+  border-radius: 6px;
+}
+
+.contact, .social {
+  padding: 16px 0;
+}
+
+.sticky {
+  background-color: white;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  -webkit-animation: fadeIn 0.4s linear;
+          animation: fadeIn 0.4s linear;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+.navbar-light .navbar-nav {
+  font-size: 1.1rem;
+}
+
+.navbar-light .navbar-nav .nav-item {
+  padding: 0px 16px;
+}
+
+.header_icon {
+  background: #faf5ee;
+  border-radius: 50%;
+  padding: 6px 14px;
+}
+
+.brand_a {
+  font-family: 'Acme', sans-serif;
+  padding: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #e8604c !important;
+}
+
+.brand_a span {
+  color: #313041 !important;
+}
+
+.slider .carousel .carousel-item {
+  background: black;
+}
+
+.slider .carousel .carousel-item img {
+  opacity: 0.5;
+}
+
+.slider .carousel .carousel-caption {
+  bottom: 30%;
+}
+
+.slider .carousel .carousel-caption h2 {
+  color: #e8604c;
+  font-family: 'Dancing Script', cursive;
+  font-size: 7rem;
+}
+
+.slider .carousel .carousel-caption p {
+  font-size: 40px;
+}
+
+.fbox h2 {
+  color: black;
+  line-height: 1.3;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.fbox .tour_search {
+  background-color: #313041;
+  border-radius: 8px;
+}
+
+.fbox .tour_search .fbox_input input {
+  padding: 12px 10px;
+  line-height: 1.2rem;
+  font-size: 1.3rem;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.dcontent h3 {
+  color: #e8604c;
+  font-family: 'Dancing Script', cursive;
+  line-height: 1.5;
+}
+
+.dcontent h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.book_tour_info .book_content h4 {
+  color: #e8604c;
+  font-family: 'Dancing Script', cursive;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.book_tour_info .book_content h2 {
+  color: #313041;
+  line-height: 1.3;
+  font-size: 3.3rem;
+  font-weight: 600;
+}
+
+.book_tour_info .book_content p {
+  font-weight: 300;
+  color: #777777;
+  line-height: 2;
+  font-size: 19px;
+  padding: 10px 5px;
+}
+
+.book_tour_info .book_content .our_qualities {
+  line-height: 2.6rem;
+  font-size: 1.1rem;
+}
+
+.book_tour_info .book_content .our_qualities .check {
+  color: #e8604c;
+  padding: 5px 12px;
+}
+
+.book_tour_info .book_content .btn_book {
+  background: #e8604c;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+}
+
+.destination_image {
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.destination_image .tour_numbers {
+  position: absolute;
+  background: #e8604c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  top: 30px;
+  right: 30px;
+  z-index: 999;
+  display: none;
+}
+
+.destination_image img {
+  border-radius: 8px;
+  width: 100%;
+  height: 300px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.destination_image:hover .tour_numbers {
+  display: block;
+}
+
+.destination_image:hover img {
+  border-radius: 8px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.destination_image::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 99;
+}
+
+.destination_image:hover::before {
+  height: 100%;
+}
+
+.destination_image h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  color: white;
+  z-index: 999;
+}
+
+.destination_image h3:hover a {
+  color: #e8604c;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.popular_slider .popular_header h3 {
+  color: #e8604c;
+  font-family: 'Dancing Script', cursive;
+  line-height: 1.5;
+  font-size: 2.3rem;
+}
+
+.popular_slider .popular_header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #313041;
+}
+
+.popular_slider .owl-carousel .item {
+  overflow: hidden;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+}
+
+.popular_slider .owl-carousel .item .popular-tour_content {
+  color: #777777;
+  padding: 30px;
+}
+
+.popular_slider .owl-carousel .item .popular-tour_content .fa-star {
+  color: #ffa801;
+}
+
+.popular_slider .owl-carousel .item .popular-tour_content h3 {
+  color: #313041;
+  padding: 6px 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.popular_slider .owl-carousel .item .popular-tour_content p .price {
+  color: #e8604c;
+  font-size: 1.4rem;
+}
+
+.popular_slider .owl-carousel .item .popular-tour_content .info {
+  background: #faf5ee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.popular_slider .owl-carousel .item .popular-tour_content .info li {
+  padding: 10px 20px;
+}
+
+.banner {
+  padding-top: 100px 0;
+}
+
+.banner .banner_img {
+  background: url(https://i0.wp.com/gaviaspreview.com/wp/tevily/wp-content/uploads/2021/09/bg-2.jpg);
+  z-index: 9;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .banner_content {
+  background: url(https://i0.wp.com/gaviaspreview.com/wp/tevily/wp-content/uploads/2021/09/bg-map-2.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 100px;
+  background-color: #313041;
+  color: #9b9b9b;
+}
+
+.banner .banner_content h3 {
+  color: #e8604c;
+  font-family: 'Dancing Script', cursive;
+  line-height: 1.5;
+  font-size: 2.3rem;
+}
+
+.banner .banner_content h1 {
+  font-size: 3.5rem;
+}
+
+.banner .banner_content p {
+  line-height: 1.9;
+}
+
+.banner .banner_content .icon {
+  color: #e8604c;
+  font-size: 4.5rem;
+}
+
+.banner .banner_content h4 {
+  font-size: 2rem;
+}
+
+.banner .banner_content .bar {
+  border-radius: 15px;
+  padding: 200px 20px;
+  background-color: #e8604c;
+  top: 10%;
+  left: -24px;
+  bottom: 10%;
+}
+
+footer {
+  background-color: #faf5ee;
+  padding: 100px;
+  padding-bottom: 0;
+  color: #857d7d;
+}
+
+footer h4 {
+  font-weight: 600;
+  color: #313041;
+  padding: 10px 0;
+}
+
+footer p {
+  line-height: 2.4;
+}
+
+footer .line {
+  position: absolute;
+  width: 75%;
+  border-top: 2px solid #d4d4d4;
+}
+
+footer ul li {
+  display: block;
+}
+
+footer .first_column ul li {
+  padding: 6px 00px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+footer .first_column ul li:hover {
+  color: #e8604c;
+}
+
+footer .first_column ul li i {
+  color: #e8604c;
+  font-size: 1.2rem;
+}
+
+footer .second_column ul li, footer .third_column ul li {
+  padding: 8px 0;
+}
+
+footer .last_column input {
+  min-height: 60px;
+  width: 90%;
+  background: #292837;
+  border-radius: 7px;
+}
+
+footer .last_column button {
+  margin-top: 6px;
+  min-height: 60px;
+  width: 90%;
+  background: #e8604c;
+  border-radius: 7px;
+  border: none;
+}
+
+footer .copyright {
+  line-height: 2;
+}
+
+footer .copyright ul li {
+  color: black !important;
+  display: inline;
+}
+
+@media screen and (max-width: 992px) {
+  .top_section {
+    display: none;
+  }
+  .slider {
+    height: auto;
+  }
+  .slider .carousel .carousel-caption h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  header .search {
+    display: none;
+  }
+  .slider .carousel .carousel-caption h2 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
